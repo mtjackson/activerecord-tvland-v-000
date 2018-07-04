@@ -3,7 +3,7 @@ class Show < ActiveRecord::Base
   has_many :actors, through: :characters
 
   def network
-    Network.find(self.)
+    Network.find(self.network_id)
   end
 
   def build_network(call_letters)

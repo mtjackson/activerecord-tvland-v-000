@@ -9,7 +9,7 @@ class Actor < ActiveRecord::Base
 
   def list_roles
     self.characters.map do |character|
-      puts "#{character.}"
+      puts "#{character.name}"
     end
   end
 

@@ -1,7 +1,7 @@
 class Character < ActiveRecord::Base
 
-  has_one :actors
-  has_one :shows
+  belongs_to :actor
+  belongs_to :show
 
   def actor
     self.actors

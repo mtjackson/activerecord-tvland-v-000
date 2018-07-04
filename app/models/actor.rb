@@ -8,8 +8,8 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    self.characters.map do |characters|
-      puts
+    self.characters.map do |character|
+      puts "#{character.}"
     end
   end
 
